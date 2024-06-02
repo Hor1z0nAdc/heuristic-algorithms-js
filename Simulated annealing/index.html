@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulated annealing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <h1 class="title">Simulated annealing</h1>
+    <div class="container">
+        <input type="file" id="fileSelector">
+        <button id="startBtn">Start the algorithm</button>
+        <div class="container">
+            <span>Num. of iterations: </span>
+            <span id="num">0</span>
+        </div>
+        <div class="container">
+            <span>Current fitness: </span>
+            <span id="cFit"></span>
+        </div>
+    </div>
+    <div>
+        <canvas width="1000" height="800" id="cv"></canvas>
+        <textarea name="log" id="log" cols="50" rows="30"></textarea>
+    </div>
+</body>
+</html>

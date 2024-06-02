@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+    <title>K-means</title>
+</head>
+<body>
+    <h1 class="title">K-means Image segmentation</h1>
+    <div class="btnContainer">
+        <input id="imageSelector" type="file" />
+        <label>Klaszterek száma</label>
+        <input id="clasterInput" value=2 type="text" />
+        <button class="startBtn" id="startBtn">Start the algorithm</button>
+    </div>
+    <div class="flex">
+        <div class="mainContainer" >
+            <h3>Input image</h3>
+            <div class="imgContainer">
+                <img id="imageTag" class="image" src="https://dummyimage.com/300x300/000/fff.jpg" alt="Alternative Text">
+            </div>
+        </div>
+        <div class="mainContainer">
+            <h3>Output Image</h3>
+                <canvas id="canvas" class="imgContainer"></canvas>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="mainContainer" >
+            <h3>Gray scaled image</h3>
+                <canvas id="grayCanvas" class="imgContainer"></canvas>
+        </div>
+    </div>
+</body>
+</html>
